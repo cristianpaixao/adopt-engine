@@ -1,9 +1,9 @@
+import Hero from '../components/Hero';
+
 export default function Home() {
   return (
-    <div>
-      <main>
-        <h1>Adopt Engine</h1>
-      </main>
+    <div className="min-h-screen bg-[#FFF8F3]">
+      <Hero />
     </div>
   );
 }
