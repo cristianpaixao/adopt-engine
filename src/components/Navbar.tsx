@@ -10,7 +10,7 @@ import {
 import { PawPrint, List, LogOut, PlusCircle } from 'lucide-react';
 
 export default function Navbar() {
-  const isAuthenticated = true;
+  const isAuthenticated = false;
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -29,6 +29,12 @@ export default function Navbar() {
               className="text-[#2D3748] hover:text-[#FF6B9D] font-medium transition-colors"
             >
               Browse Pets
+            </Link>
+            <Link
+              href="/let-me-know"
+              className="text-[#2D3748] hover:text-[#FF6B9D] font-medium transition-colors"
+            >
+              Let me Know
             </Link>
             {isAuthenticated && (
               <Link
