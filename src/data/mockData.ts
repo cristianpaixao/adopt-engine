@@ -1,0 +1,238 @@
+import { Pet } from '@/src/types';
+
+export const mockPets: Pet[] = [
+  {
+    id: '1',
+    name: 'Max',
+    type: 'dog',
+    breed: 'Golden Retriever',
+    age: 24,
+    ageCategory: 'adult',
+    sex: 'male',
+    size: 'large',
+    description:
+      'Max is a friendly and energetic Golden Retriever who loves to play fetch and go on long walks. He is great with kids and other dogs. Max is house-trained and knows basic commands.',
+    images: [
+      'https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=800',
+      'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800',
+      'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800',
+    ],
+    region: 'California',
+    city: 'Los Angeles',
+    ownerId: '1',
+    ownerName: 'Sarah Johnson',
+    ownerEmail: 'sarah@example.com',
+    ownerPhone: '+1-555-0101',
+    listedAt: new Date('2024-11-01'),
+    vaccinated: true,
+    neutered: true,
+  },
+  {
+    id: '2',
+    name: 'Luna',
+    type: 'cat',
+    breed: 'Siamese',
+    age: 18,
+    ageCategory: 'adult',
+    sex: 'female',
+    size: 'small',
+    description:
+      'Luna is a beautiful Siamese cat with striking blue eyes. She is affectionate and loves to cuddle. Luna is an indoor cat and gets along well with other cats.',
+    images: [
+      'https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=800',
+      'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=800',
+    ],
+    region: 'New York',
+    city: 'New York',
+    ownerId: '2',
+    ownerName: 'Michael Chen',
+    ownerEmail: 'michael@example.com',
+    ownerPhone: '+1-555-0102',
+    listedAt: new Date('2024-11-05'),
+    vaccinated: true,
+    neutered: true,
+  },
+  {
+    id: '3',
+    name: 'Charlie',
+    type: 'dog',
+    breed: 'Labrador',
+    age: 8,
+    ageCategory: 'puppy',
+    sex: 'male',
+    size: 'medium',
+    description:
+      'Charlie is an adorable Labrador puppy full of energy and love. He is learning basic commands and is eager to please. Perfect for an active family!',
+    images: [
+      'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800',
+      'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800',
+    ],
+    region: 'Texas',
+    city: 'Austin',
+    ownerId: '3',
+    ownerName: 'Emma Davis',
+    ownerEmail: 'emma@example.com',
+    ownerPhone: '+1-555-0103',
+    listedAt: new Date('2024-11-10'),
+    vaccinated: true,
+    neutered: false,
+  },
+  {
+    id: '4',
+    name: 'Bella',
+    type: 'cat',
+    breed: 'Persian',
+    age: 36,
+    ageCategory: 'adult',
+    sex: 'female',
+    size: 'small',
+    description:
+      'Bella is a gentle Persian cat with a luxurious coat. She enjoys quiet environments and loves to be pampered. Bella is perfect for someone looking for a calm companion.',
+    images: [
+      'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=800',
+    ],
+    region: 'California',
+    city: 'San Francisco',
+    ownerId: '1',
+    ownerName: 'Sarah Johnson',
+    ownerEmail: 'sarah@example.com',
+    ownerPhone: '+1-555-0101',
+    listedAt: new Date('2024-11-12'),
+    vaccinated: true,
+    neutered: true,
+  },
+  {
+    id: '5',
+    name: 'Tweety',
+    type: 'bird',
+    breed: 'Canary',
+    age: 12,
+    ageCategory: 'adult',
+    sex: 'male',
+    size: 'small',
+    description:
+      'Tweety is a beautiful yellow canary with a lovely singing voice. He is friendly and enjoys interacting with people. Comes with cage and accessories.',
+    images: ['https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800'],
+    region: 'New York',
+    city: 'Brooklyn',
+    ownerId: '2',
+    ownerName: 'Michael Chen',
+    ownerEmail: 'michael@example.com',
+    ownerPhone: '+1-555-0102',
+    listedAt: new Date('2024-11-15'),
+    vaccinated: false,
+    neutered: false,
+  },
+  {
+    id: '6',
+    name: 'Rocky',
+    type: 'dog',
+    breed: 'German Shepherd',
+    age: 96,
+    ageCategory: 'senior',
+    sex: 'male',
+    size: 'large',
+    description:
+      'Rocky is a loyal German Shepherd looking for a loving home to spend his golden years. He is calm, well-trained, and great with families. Rocky deserves a comfortable retirement.',
+    images: [
+      'https://images.unsplash.com/photo-1568572933382-74d440642117?w=800',
+    ],
+    region: 'Texas',
+    city: 'Houston',
+    ownerId: '3',
+    ownerName: 'Emma Davis',
+    ownerEmail: 'emma@example.com',
+    ownerPhone: '+1-555-0103',
+    listedAt: new Date('2024-11-18'),
+    vaccinated: true,
+    neutered: true,
+  },
+  {
+    id: '7',
+    name: 'Nemo',
+    type: 'fish',
+    breed: 'Clownfish',
+    age: 6,
+    ageCategory: 'puppy',
+    sex: 'male',
+    size: 'small',
+    description:
+      'Nemo is a vibrant clownfish perfect for saltwater aquarium enthusiasts. He is healthy and active. Comes with care instructions and starter supplies.',
+    images: [
+      'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800',
+    ],
+    region: 'California',
+    city: 'San Diego',
+    ownerId: '1',
+    ownerName: 'Sarah Johnson',
+    ownerEmail: 'sarah@example.com',
+    ownerPhone: '+1-555-0101',
+    listedAt: new Date('2024-11-20'),
+    vaccinated: false,
+    neutered: false,
+  },
+  {
+    id: '8',
+    name: 'Fluffy',
+    type: 'rabbit',
+    breed: 'Holland Lop',
+    age: 15,
+    ageCategory: 'adult',
+    sex: 'female',
+    size: 'small',
+    description:
+      'Fluffy is an adorable Holland Lop rabbit with soft fur and floppy ears. She is litter-trained and loves fresh vegetables. Great for families with children.',
+    images: [
+      'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=800',
+    ],
+    region: 'New York',
+    city: 'Albany',
+    ownerId: '2',
+    ownerName: 'Michael Chen',
+    ownerEmail: 'michael@example.com',
+    ownerPhone: '+1-555-0102',
+    listedAt: new Date('2024-11-22'),
+    vaccinated: true,
+    neutered: true,
+  },
+  {
+    id: '9',
+    name: 'Whiskers',
+    type: 'hamster',
+    breed: 'Syrian Hamster',
+    age: 4,
+    ageCategory: 'puppy',
+    sex: 'male',
+    size: 'small',
+    description:
+      'Whiskers is a cute Syrian hamster with golden fur. He is active at night and loves running on his wheel. Perfect first pet for kids!',
+    images: [
+      'https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800',
+    ],
+    region: 'Texas',
+    city: 'Dallas',
+    ownerId: '3',
+    ownerName: 'Emma Davis',
+    ownerEmail: 'emma@example.com',
+    ownerPhone: '+1-555-0103',
+    listedAt: new Date('2024-11-25'),
+    vaccinated: false,
+    neutered: false,
+  },
+];
+
+let pets = [...mockPets];
+
+export const getPets = (): Pet[] => pets;
+
+export const addPet = (pet: Pet): void => {
+  pets = [...pets, pet];
+};
+
+export const getUserPets = (userId: string): Pet[] => {
+  return pets.filter((pet) => pet.ownerId === userId);
+};
+
+export const deletePet = (petId: string): void => {
+  pets = pets.filter((pet) => pet.id !== petId);
+};
