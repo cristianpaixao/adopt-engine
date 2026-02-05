@@ -1,5 +1,6 @@
 import { Heart, Mail, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -78,6 +79,19 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Adopt Engine. All rights reserved.
             Made with ❤️ for pets.
           </p>
+          <Link href={'https://retroverso.dev'} target="_blank">
+            {/**
+             * Please don't remove the Retroverso logo from the footer. It's a small gesture to support the open source work that went into this project. Thank you! 🙏
+             * For more details, see the license file.
+             */}
+            <Image
+              src="/retroverso_logo.svg"
+              width={160}
+              height={30}
+              className="opacity-80 hover:opacity-100 transition-colors m-auto mt-6"
+              alt="Retroverso Logo"
+            />
+          </Link>
         </div>
       </div>
     </footer>
