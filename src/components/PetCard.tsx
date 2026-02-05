@@ -12,22 +12,22 @@ interface PetCardProps {
 export default function PetCard({ pet }: PetCardProps) {
   const getAgeCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
-      puppy: 'bg-green-100 text-green-800',
-      adult: 'bg-yellow-100 text-yellow-800',
-      senior: 'bg-gray-100 text-gray-800',
+      puppy: 'bg-[#48BB78] text-white',
+      adult: 'bg-[#4ECDC4] text-white',
+      senior: 'bg-[#F6AD55] text-white',
     };
-    return colors[category] || 'bg-gray-100 text-gray-800';
+    return colors[category] || 'bg-gray-500 text-white';
   };
 
   const getTypeColor = (type: string) => {
     const colors: Record<string, string> = {
-      dog: 'bg-blue-100 text-blue-800',
-      cat: 'bg-pink-100 text-pink-800',
-      bird: 'bg-yellow-100 text-yellow-800',
-      fish: 'bg-cyan-100 text-cyan-800',
-      rabbit: 'bg-purple-100 text-purple-800',
-      hamster: 'bg-orange-100 text-orange-800',
-      other: 'bg-gray-100 text-gray-800',
+      dog: 'bg-[#FF6B9D] text-white',
+      cat: 'bg-[#FFA07A] text-white',
+      bird: 'bg-[#4ECDC4] text-white',
+      fish: 'bg-blue-500 text-white',
+      rabbit: 'bg-purple-500 text-white',
+      hamster: 'bg-yellow-500 text-white',
+      other: 'bg-gray-500 text-white',
     };
     return colors[type] || 'bg-gray-100 text-gray-800';
   };
