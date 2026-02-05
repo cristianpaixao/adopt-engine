@@ -25,7 +25,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-6">
             <Link
-              href="/browse"
+              href="/pets"
               className="text-[#2D3748] hover:text-[#FF6B9D] font-medium transition-colors"
             >
               Browse Pets
