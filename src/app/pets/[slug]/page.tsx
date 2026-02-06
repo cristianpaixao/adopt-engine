@@ -1,3 +1,5 @@
+import PetDetail from '@/src/components/PetDetail';
+
 type Props = {
   params: Promise<{
     slug: string;
@@ -5,7 +7,6 @@ type Props = {
 };
 
 export default async function PetDetailPage({ params }: Props) {
-  const { slug } = await params;
-
-  return <div>Pet Detail Page for slug: {slug}</div>;
+  const { slug } = (await params) || '';
+  return <PetDetail slug={slug} />;
 }
